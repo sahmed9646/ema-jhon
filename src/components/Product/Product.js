@@ -25,12 +25,6 @@ const Product = props => {
           <FontAwesomeIcon icon={faShoppingCart} />
           Add To Cart
         </button>
-        <button
-          onClick={() => props.handleRemoveProduct(props.product)}
-          className="btnRemoveCart"
-        >
-          Remove Item
-        </button>
       </div>
     </div>
   );

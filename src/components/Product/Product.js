@@ -2,9 +2,9 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import "./Product.css";
-const Product = props => {
-  console.log(props.product);
-  const { img, category, name, price, seller, stock } = props.product;
+import { Link } from "react-router-dom";
+const Product = (props) => {
+  const { img, category, name, price, seller, stock, key } = props.product;
   return (
     <div className="products">
       <div>
@@ -12,19 +12,23 @@ const Product = props => {
       </div>
       <div className="product-details">
         <h2>{category}</h2>
-        <h3>{name}</h3>
+        <h3>
+          <Link to={"/product/" + key}>{name}</Link>
+        </h3>
         <p> By : {seller}</p>
         <p> ${price}</p>
         <p>
           <small>Only {stock} left in the stock- order now</small>
         </p>
-        <button
-          onClick={() => props.handleAddProduct(props.product)}
-          className="btnAddCart"
-        >
-          <FontAwesomeIcon icon={faShoppingCart} />
-          Add To Cart
-        </button>
+        {props.showAddBtn && (
+          <button
+            onClick={() => props.handleAddProduct(props.product)}
+            className="main-button"
+          >
+            <FontAwesomeIcon icon={faShoppingCart} />
+            Add To Cart
+          </button>
+        )}
       </div>
     </div>
   );

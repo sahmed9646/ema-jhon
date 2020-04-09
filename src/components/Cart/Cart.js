@@ -1,13 +1,16 @@
 import React from "react";
 
-const Cart = props => {
+const Cart = (props) => {
   //   let price = 0;
   //   for (let i = 0; i < props.ct.length; i++) {
   //     const element = props.ct[i];
   //     price = price + element.price;
   //   }
   // or we can write following
-  const total = props.ct.reduce((total, pd) => total + pd.price, 0);
+  const total = props.ct.reduce(
+    (total, pd) => total + pd.price * pd.quantity,
+    0
+  );
   //============//
 
   let shipmentCost = 0;
@@ -17,7 +20,7 @@ const Cart = props => {
     shipmentCost = 5;
   }
 
-  const formatNumber = number => {
+  const formatNumber = (number) => {
     const precision = number.toFixed(2);
     return Number(precision);
   };
@@ -35,6 +38,10 @@ const Cart = props => {
         <small>Tax(10%) : ${taxCost}</small>
       </p>
       <h5>Total Price : ${grandTotal}</h5>
+      <br />
+      <a href="/review">
+        <button className="main-button">Review Order</button>
+      </a>
     </div>
   );
 };

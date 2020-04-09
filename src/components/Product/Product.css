@@ -16,7 +16,7 @@
   padding: 10px;
 }
 
-.btnAddCart {
+.main-button {
   background-color: darkgoldenrod;
   padding: 10px;
   border-radius: 10px;
@@ -27,24 +27,7 @@
   font-weight: 700;
   margin-right: 5px;
 }
-.btnAddCart:hover {
-  background-color: #f8f6f6;
-  color: #000;
-  font-weight: 700;
-}
-
-.btnRemoveCart {
-  background-color: #8f6a0d;
-  padding: 10px;
-  border-radius: 10px;
-  color: #fff;
-  width: 200px;
-  cursor: pointer;
-  border: 1px solid #836009;
-  font-weight: 700;
-}
-
-.btnRemoveCart:hover {
+.main-button:hover {
   background-color: #f8f6f6;
   color: #000;
   font-weight: 700;

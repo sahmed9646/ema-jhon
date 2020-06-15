@@ -1,5 +1,17 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+<h2>Ecommerce Web App</h2>
+React.js learning purposes</br>
+Trying to implement all ecommerce functionality</br>
+#Using </br>
+React.js Framework</br>
+Javascript</br>
+JSON</br>
+Firebase</br>
+HTML5</br>
+CSS
+
+
 ## Available Scripts
 
 In the project directory, you can run:

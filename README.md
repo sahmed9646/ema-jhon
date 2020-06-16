@@ -3,7 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 <h2>Ecommerce Web App</h2>
 React.js learning purposes</br>
 Trying to implement all ecommerce functionality</br>
-#Using </br>
+# Using </br>
 React.js Framework</br>
 Javascript</br>
 JSON</br>
